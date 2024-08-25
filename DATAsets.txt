@@ -1,0 +1,22 @@
+Prostate cancer specific gene expression (3000)
+[ 3 normal prostate samples and 3 prostate cancer sample]
+
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30994
+Gene expression profiles of breast, colorectal, prostate, and non-small cell lung cancer (16000)
+ [60 prostate cancer with 7 matched normal]
+
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103512
+Gene signatures in prostate cancer linked to the Gleason score
+[59 prostate cancer and 39 matched benign tissue] (7500)
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE32571
+Molecular analyses of prostate tumors for diagnosis of malignancy on Fine-Needle Aspiration biopsies
+[4 PCa samples and 4 BPH samples] (1200)
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE104749
+Genome-wide analysis of gene expression patterns in human prostate cancer (PCa) (6000)
+[30 matched malignant and non-malignant prostate tissue samples from 15 PCa patients.]
+
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE69223
+Expression data from prostate cancer and benign prostate glands (6000)
+ [36 patients with prostate cancer vs normal prostate biopsies from 14 patients]
+
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE46602

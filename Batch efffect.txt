@@ -1,0 +1,40 @@
+mod1 = model.matrix(~sample_source,data=sampleInfo)
+mod01 = model.matrix(~1, data=sampleInfo)
+
+sva12 = sva(exprs(affyData),mod1,mod01,n.sv=2)
+boxplot(sva1$sv[,2])
+points(sva1$sv[,2])
+
+
+#y as the gene expresion matrix
+#mod as the model matrix you sent to sva (the full model)
+#svs as svobj$sv where svobj is the output from the sva function
+
+cleanY = function(y, mod, svs) {
+  X = cbind(mod, svs)
+  Hat = solve(t(X) %*% X) %*% t(X)
+  beta = (Hat %*% t(y))
+  rm(Hat)
+  gc()
+  P = ncol(mod)
+  return(y - t(as.matrix(X[,-c(1:P)]) %*% beta[-c(1:P),]))
+}
+
+BBB <- cleanY(exprs(affyData),mod01,sva12$sv)
+
+
+Dear Reviewer,
+
+We sincerely appreciate your feedback and valuable insights on our manuscript.
+ Your comments have greatly contributed to the quality of our work.
+
+Regarding the issue of batch effect removal in our microarray dataset,
+ we regret to inform you that we encountered challenges that prevented us from implementing this step in our analysis.
+ While we recognize the importance of addressing batch effects to ensure data quality, 
+we encountered specific limitations that made this task unfeasible. 
+We would like to provide a comprehensive explanation for our decision:
+ **Unavailability of Batch Information:**
+   Unfortunately, we do not possess access to detailed batch information or phenotype data 
+that could have assisted in the identification and correction of batch effects.
+ Without this essential metadata, 
+it becomes exceedingly difficult to accurately distinguish between technical and biological variation.
